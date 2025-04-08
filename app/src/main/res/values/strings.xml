@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Polipresta</string>
+    <string name="pago_con_tarjeta">Pago con Tarjeta</string>
+    <string name="pago_por_pse">Pago por PSE</string>
+    <string name="_5_500_000">$5.500.000</string>
+    <string name="pago_total">Pago total</string>
+    <string name="_390_000">$390.000</string>
+    <string name="pago_minimo">Pago mínimo</string>
+    <string name="pagos_prestamos">Pagos Préstamos</string>
 </resources>
