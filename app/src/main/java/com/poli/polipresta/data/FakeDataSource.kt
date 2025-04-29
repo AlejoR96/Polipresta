@@ -5,7 +5,7 @@ import com.poli.polipresta.model.User
 object FakeDataSource {
     // Usuarios de prueba
     val mockUsers = listOf(
-        User("123", "123", "Freddy Herrera"),
+        User("1234567", "qwerty", "Freddy Herrera"),
         User("0987654321", "claveSegura", "Jair Rivera")
     )
 

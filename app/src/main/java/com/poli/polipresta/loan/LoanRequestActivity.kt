@@ -88,12 +88,12 @@ fun LoanRequestScreen(
             label = { Text(stringResource(R.string.loan_amount)) },
             modifier = Modifier.fillMaxWidth(),
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
-            leadingIcon = {
+//            leadingIcon = {
 //                Icon(
 //                    painter = painterResource(R.drawable.ic_money),
 //                    contentDescription = null
 //                )
-            }
+//            }
         )
 
         OutlinedTextField(
