@@ -1,4 +1,4 @@
-package com.example.polipresta.ui.theme
+package com.poli.polipresta.theme
 
 import androidx.compose.ui.graphics.Color
 
