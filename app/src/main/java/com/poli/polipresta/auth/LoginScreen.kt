@@ -58,7 +58,6 @@ fun LoginScreen(
     var password by remember { mutableStateOf("") }
     var isLoading by remember { mutableStateOf(false) }
 
-    // Observar estado del ViewModel (sin cambios)
     LaunchedEffect(viewModel.loginState) {
         viewModel.loginState.collect { state ->
             when (state) {
@@ -89,7 +88,6 @@ fun LoginScreen(
                 .verticalScroll(rememberScrollState()),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            // Logo añadido aquí (sin afectar funcionalidad)
             Image(
                 painter = painterResource(R.drawable.poli),
                 contentDescription = "Logo Universidad",
@@ -99,44 +97,28 @@ fun LoginScreen(
                 contentScale = ContentScale.Fit
             )
 
-            // Contenedor del formulario (misma funcionalidad)
             Column(
                 modifier = Modifier
                     .padding(horizontal = 24.dp)
                     .width(IntrinsicSize.Max),
                 verticalArrangement = Arrangement.spacedBy(16.dp)
             ) {
-                // Campo Cédula (sin cambios)
                 OutlinedTextField(
                     value = cedula,
                     onValueChange = { cedula = it },
                     label = { Text(stringResource(R.string.hint_cedula)) },
                     modifier = Modifier.fillMaxWidth(),
                     keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
-//                    leadingIcon = {
-//                        Icon(
-//                            painter = painterResource(R.drawable.ic_person),
-//                            contentDescription = "Icono cédula"
-//                        )
-//                    }
                 )
 
-                // Campo Contraseña (sin cambios)
                 OutlinedTextField(
                     value = password,
                     onValueChange = { password = it },
                     label = { Text(stringResource(R.string.hint_password)) },
                     modifier = Modifier.fillMaxWidth(),
                     visualTransformation = PasswordVisualTransformation(),
-//                    leadingIcon = {
-//                        Icon(
-//                            painter = painterResource(R.drawable.ic_lock),
-//                            contentDescription = "Icono contraseña"
-//                        )
-//                    }
                 )
 
-                // Botón de Login (sin cambios)
                 Button(
                     onClick = { viewModel.login(cedula, password) },
                     modifier = Modifier
@@ -155,7 +137,6 @@ fun LoginScreen(
                 }
             }
 
-            // Texto institucional opcional
             Text(
                 text = stringResource(R.string.institutional_footer),
                 style = MaterialTheme.typography.bodySmall,
