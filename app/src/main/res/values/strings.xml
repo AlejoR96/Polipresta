@@ -1,10 +1,41 @@
 <resources>
-    <string name="app_name">Polipresta</string>
-    <string name="pago_con_tarjeta">Pago con Tarjeta</string>
-    <string name="pago_por_pse">Pago por PSE</string>
-    <string name="_5_500_000">$5.500.000</string>
-    <string name="pago_total">Pago total</string>
-    <string name="_390_000">$390.000</string>
-    <string name="pago_minimo">Pago mínimo</string>
-    <string name="pagos_prestamos">Pagos Préstamos</string>
+    <!-- App -->
+    <string name="app_name">PoliPresta</string>
+
+    <!-- Login Screen -->
+    <string name="login_title">Iniciar Sesión</string>
+    <string name="hint_cedula">Cédula</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="btn_login">Ingresar</string>
+    <string name="error_empty_fields">Complete todos los campos</string>
+    <string name="error_invalid_credentials">Cédula o contraseña incorrectos</string>
+    <string name="institutional_footer">Politécnico Grancolombiano</string>
+
+    <!-- Main Activity -->
+    <string name="welcome">¡Bienvenido/a!</string>
+    <string name="current_debt">Deuda actual</string>
+    <string name="last_update">Última actualización: Hoy</string>
+    <string name="quick_actions">Acciones Rápidas</string>
+    <string name="transaction_history">Últimos Movimientos</string>
+    <string name="loan_request">Solicitar Préstamo</string>
+    <string name="make_payment">Realizar Pago</string>
+    <string name="logout">Cerrar Sesión</string>
+
+    <!-- Loan Activity -->
+    <string name="loan_request_title">Solicitar Préstamo</string>
+    <string name="loan_amount">Monto del préstamo</string>
+    <string name="loan_description">Motivo (opcional)</string>
+    <string name="request_loan_button">Solicitar</string>
+    <string name="back_to_home">Volver al inicio</string>
+    <string name="loan_instructions">Complete los siguientes campos para solicitar un préstamo estudiantil</string>
+    <string name="loan_terms">Monto máximo permitido: $5,000.00\nTasa de interés: 2% mensual\nPlazo máximo: 12 meses</string>
+    <string name="loan_success_message">¡Préstamo de $%.2f aprobado exitosamente!</string>
+
+    <!-- Payment Activity -->
+    <string name="payment_title">Pago de Crédito</string>
+    <string name="current_debt_label">Deuda Actual</string>
+    <string name="payment_amount">Monto a pagar</string>
+    <string name="make_payment_button">Realizar Pago</string>
+    <string name="payment_success_message">¡Pago de $%.2f realizado con éxito!</string>
+    <string name="payment_error_exceeds">El monto excede tu deuda actual</string>
 </resources>
